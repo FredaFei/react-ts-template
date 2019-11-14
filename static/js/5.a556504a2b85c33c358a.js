@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"JAv/":function(e,n,t){},MOQ3:function(e,n,t){"use strict";t.r(n);var c=t("q1tI"),a=t("oP/V"),i=(t("JAv/"),Object(a.a)("SignUp"));n.default=function(e){return c.createElement("div",{className:Object(a.b)(i("wrapper"))},"注册")}}}]);
