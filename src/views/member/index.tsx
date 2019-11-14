@@ -22,17 +22,15 @@ interface NavItem {
 
 const navs = {
   base: [
-    { name: '我的钱包', path: 'FAQ', icon: '' },
-    { name: '购买记录', path: 'reg_login', icon: '' },
-    { name: '优惠券', path: 'card_real', icon: '' },
-    { name: '银行卡', path: 'invest', icon: '' },
-    { name: '我的积分', path: 'cash', icon: '' },
+    { name: '我的钱包', path: '/wallet', icon: '' },
+    { name: '购买记录', path: '/history', icon: '' },
+    { name: '银行卡', path: '/bank', icon: '' },
+    { name: '我的积分', path: '/point', icon: '' },
   ],
   vip: [
-    { name: '联系我们', path: 'huangjin', icon: '' },
-    { name: '平台公告', path: 'youhuiquanshuoming', icon: '' },
+    { name: '联系我们', path: '/concat', icon: '' },
+    { name: '平台公告', path: '/notice', icon: '' },
     { name: '帮助中心', path: '/helpCenter', icon: '' },
-    { name: '关于华侨宝', path: 'award', icon: '' },
   ]
 }
 

@@ -9,7 +9,7 @@ const NotFound= <AuthRoute key='err404' component={Loadable(() => import('views/
 export default [
   <AuthRoute key="home" exact={true} path="/" component={Home}/>,
   <AuthRoute key="home" exact={true} path="/home" component={Home}/>,
-  <AuthRoute key="gold" exact={true} path="/gold" component={Loadable(()=>import('views/golds/index'))}/>,
+  <AuthRoute key="product" exact={true} path="/product" component={Loadable(()=>import('views/product/index'))}/>,
   <AuthRoute key="member" exact={true} path="/member" auth={true} component={Loadable(()=>import('views/member/index'))}/>,
   <AuthRoute key="login" exact={true} path="/login" component={Loadable(()=>import('views/loginSignup/login'))}/>,
   <AuthRoute key="signUp" path="/signUp" component={Loadable(()=>import('views/loginSignup/signUp'))}/>,

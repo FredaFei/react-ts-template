@@ -24,7 +24,7 @@ const useHandbook = (type: string) => {
     helpCenterDetail({ type, page_size: 20 })
       .then((res: any) => {
         setCollapseList(res.information_list);
-      });
+      }, err => {console.log(err)});
   }, [type]);
   return [collapseList];
 };
@@ -34,13 +34,16 @@ const Detail: React.FunctionComponent<Props> = props => {
   return (
     <div className={classes(sc('content'))}>
       <Header>帮助详情</Header>
+
+      {collapseList.length === 0 && (props.match.params as any).type}
+      {collapseList.length > 0 &&
       <Collapse defaultActiveKey={selected} className={sc('inner')}>
-        {collapseList.length === 0 && '暂无'}
-        {collapseList.length > 0 && collapseList.map((item: CollapseItem) => <Pane header={item.title} key={item.id}
-                                                                                   name={item.id}>
+        {collapseList.map((item: CollapseItem) => <Pane header={item.title} key={item.id}
+                                                        name={item.id}>
           <div dangerouslySetInnerHTML={{ __html: item.content }}></div>
         </Pane>)}
       </Collapse>
+      }
     </div>
   );
 }

@@ -17,20 +17,17 @@ interface NavItem {
 
 const navs = {
   base: [
-    { name: '常见问题', type: 'FAQ', icon: '' },
-    { name: '注册登录', type: 'reg_login', icon: '' },
-    { name: '绑卡实名', type: 'card_real', icon: '' },
-    { name: '投资', type: 'invest', icon: '' },
-    { name: '提现', type: 'cash', icon: '' },
+    { name: '常见问题', type: '常见问题', icon: '' },
+    { name: '注册登录', type: '注册登录', icon: '' },
+    { name: '绑卡实名', type: '绑卡实名', icon: '' },
   ],
   vip: [
-    { name: '黄金说明', type: 'huangjin', icon: '' },
-    { name: '优惠券说明', type: 'youhuiquanshuoming', icon: '' },
-    { name: '推荐好友', type: 'inviter', icon: '' },
-    { name: '奖励', type: 'award', icon: '' },
-    { name: '会员说明', type: 'about_vip', icon: '' },
-    { name: '积分说明', type: 'about_point', icon: '' },
-    { name: '任务说明', type: 'about_mission', icon: '' },
+    { name: '优惠券说明', type: '优惠券说明', icon: '' },
+    { name: '推荐好友', type: '推荐好友', icon: '' },
+    { name: '奖励', type: '奖励', icon: '' },
+    { name: '会员说明', type: '会员说明', icon: '' },
+    { name: '积分说明', type: '积分说明', icon: '' },
+    { name: '任务说明', type: '任务说明', icon: '' },
   ]
 }
 

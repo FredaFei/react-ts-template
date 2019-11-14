@@ -10,7 +10,7 @@ const sc = createScopedClasses('content')
 
 const dataSource = [
   {text: '首页', icon: 'left', path: '/'},
-  {text: '黄金', icon: 'right', path: '/gold'},
+  {text: '产品', icon: 'right', path: '/product'},
   {text: '我的', icon: 'user', path: '/member'}
 ]
 
